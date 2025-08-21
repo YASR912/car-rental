@@ -1,0 +1,108 @@
+
+body {
+    background-color: #f8f9fa;
+}
+
+.jumbotron {
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+    padding: 2rem;
+}
+
+/* Add these styles to your existing CSS file */
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg') center/cover no-repeat;
+}
+
+.car-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.car-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.car-image {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.car-card:hover .car-image {
+    transform: scale(1.05);
+}
+
+.car-price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 123, 255, 0.9);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.car-total-price {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: rgba(40, 167, 69, 0.9);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.image-upload-container {
+    border: 2px dashed #dee2e6;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.image-upload-container:hover {
+    border-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section .display-4 {
+        font-size: 2rem;
+    }
+    
+    .car-image {
+        height: 160px;
+    }
+}
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
